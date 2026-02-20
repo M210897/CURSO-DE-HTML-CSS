@@ -1,0 +1,29 @@
+<!--Codigo Mario Perez-->
+
+<style>
+    ol{
+        list-style-type: square;
+        list-style-type: none;
+        counter-reset: item;
+    }
+    li{
+        position: relative;
+        padding-left: 2em;
+    }
+    li::before{
+        content: counter(item);
+        counter-increment: item;
+        position: absolute;
+        left: 0;
+        color: gray
+        font-weight:blue;
+    }
+</style>
+Mario Perez
+<ol>
+ <li><a href="https://monlaferte.komi.io/" target="_blank">Mon Laferte</a></li>
+ <li><a href="https://luismigueloficial.com/" target="_parent">Luis Miguel</a></li>
+ <li><a href="https://www.brunomars.com/" target="_self">Bruno Mars</a></li>
+ <li><a href="http://carteldesanta.com/" target="_top">Cartel de Santa</a></li>
+ <li><a href="https://badbunny.pro/">Bad Bunny</a></li>   
+</ol>
