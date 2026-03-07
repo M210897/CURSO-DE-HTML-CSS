@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Top de semana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+ <style>
+    body{
+        font-family: arial,sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: rgb(43, 135, 240);
+    }
+    h1{text-align: center, rgb(247, 247, 247)};    
+
+input[type="radio"]{
+  display: none;} /* Oculta los radio buttons */
+ 
+  .card-item{
+    display: block;}
+    #norte:checked ~.cards .norte,
+    #sur:checked ~.cards .sur,
+    #este:checked ~.cards .este,
+    #oeste:checked ~.cards .oeste
+  {display: block;} /* Muestra las tarjetas correspondientes a la región seleccionada */
+   #norte:checked ~.cards .card-item:not(.norte),
+   #sur:checked~.cards .card-item:not(.sur),
+   #este:checked~.cards .card-item:not(.este),
+   #oeste:checked~.cards .card-item:not(.oeste)
+  {display: none;} /* Oculta las tarjetas que no corresponden a la región seleccionada */
+#todas:checked ~ .cards .card-item {
+  display: block;} /* Muestra todas las tarjetas cuando se selecciona "Todas" */
+</style>
+</head>
+<body>
+<h1>Top de semana - Ordenes-Mario Perez</h1>
+<div class="container-fluid">
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar por región" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar order</button>
+    </form>
+</div>
+<input type="radio" name="filtro" id="todas" checked>
+<input type="radio" name="filtro" id="norte">
+<input type="radio" name="filtro" id="sur">
+<input type="radio" name="filtro" id="este">
+<input type="radio" name="filtro" id="oeste">
+<div class="text-center my-4">
+    <label for="todas" class="btn btn-outline-info active">Todas</label>
+    <label for="norte" class="btn btn-outline-info">Norte</label>
+    <label for="sur" class="btn btn-outline-info">Sur</label>
+    <label for="este" class="btn btn-outline-info">Este</label>
+    <label for="oeste" class="btn btn-outline-info">Oeste</label>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4 cards">
+  <div class="col card-item norte">
+    <div class="card">
+      <img src="https://zelda.nintendo.com/assets/icons/share_icon-fb.jpg" class="card-img-top" alt="zelda">
+      <div class="card-body">
+        <h5 class="card-title">The legend of Zelda</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col card-item sur">
+    <div class="card">
+      <img src="https://cdn2.unrealengine.com/egs-reanimaldigitaldeluxeedition-tarsierstudios-editions-s1-2560x1440-b804253573f6.jpg" class="card-img-top" alt="mario">
+      <div class="card-body">
+        <h5 class="card-title">REANIMAL</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col card-item este">
+    <div class="card">
+      <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000084608/ba0572bf9d840b03bf9958809943fb3c76c3adfd6d8f2704b0f1b766f8aa4027" class="card-img-top" alt="minecraft">
+      <div class="card-body">
+        <h5 class="card-title">Super Mario Party Jamboree</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-item oeste">
+      <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000012332/ac4d1fc9824876ce756406f0525d50c57ded4b2a666f6dfe40a6ac5c3563fad9" class="card-img-top" alt="pokemon">
+      <div class="card-body">
+        <h5 class="card-title">Super Smash Bros Ultimate</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

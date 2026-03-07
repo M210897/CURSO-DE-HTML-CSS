@@ -1,0 +1,17 @@
+.contenedor{
+    display:flex;
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;*/
+    justify-content: center; /*Centra elementos horzontalmente*/
+    gap: 20px; /*Deja espacio entre elementos*/
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.caja{
+    background: lightblue;
+    color:white;
+    padding:15px;
+    border-radius: 5px;
+}

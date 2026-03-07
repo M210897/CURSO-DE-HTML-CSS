@@ -1,0 +1,19 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+.links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}

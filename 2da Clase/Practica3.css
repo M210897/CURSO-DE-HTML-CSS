@@ -1,0 +1,28 @@
+:root{
+    --color-primario: #15166b;
+    --color-secundario: #1932d4;
+    --color-fondo: #3fbdf7;
+    --color-texto: #270346;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-weight: 400;
+    font-style: normal;
+}
+
+#hab{
+    color: var(--color-primario);
+    font: size 3rem;
+}
+
+#pas{
+    color: var(--color-secundario);
+    font-size: medium;
+}
+
+#hab + li{
+    margin-bottom: 10px;
+}
